@@ -461,7 +461,7 @@ body{
     width: 100%;
 }
 .inputfeild{
-    font-size: xx-small;
+    font-size: small;
 }
 .firstwrapper{
     align-items: center;
@@ -490,7 +490,7 @@ body{
     left:0;
     }
 #signbox{
-        width:100%;
+        width:90%;
     }
     .lastwrap{width: 100%;}
 
@@ -505,4 +505,8 @@ body{
     width:60%;
     margin-left: 20%;
 }
+#invoice{
+    padding:20px;
+}
+
 }
