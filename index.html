@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pdf generator</title>
+    <link rel="stylesheet" href="syle.css">
+
+</head>
+<body id="body">
+    <form onsubmit="genpdf(); return false" id="form">
+   <div id="invoice">
+    <img id="nav" src="theLogo.png">
+    <div class="firstwrapper">
+        <div class="firstleft">
+           <div class="firstupperleft">
+            <h3>Personal Details<br></h3>
+           </div>
+           <div class="firstlowerleft">
+            <div class="inputwrap">
+                <label class="labeltext" for="email">Email</label><br>
+                <input id="email" class="inputfeild" type="email" required placeholder="Enter Email">
+                </div>
+                
+           </div>
+        </div>
+        <div class="firstright">
+            <div id="previmage1" class="inputedimage"></div>
+            <p id="date"></p>
+        </div>
+    </div>
+     <div class="secondwrapper">
+        <div class="inputwrap">
+            <label class="labeltext" for="name">Name</label><br>
+            <input id="name" class="inputfeild" type="text" required placeholder="Enter your name">
+        </div>
+         <!-- phone input -->
+        <div class="inputwrap">
+            <label class="labeltext" for="phone">Contact.</label><br>
+            <input class="inputfeild" type="tel" id="phone" name="phone" placeholder="Enter phone number" minlength="10" required>
+        </div>
+    </div>
+      <div class="thirdwrapper">
+        <!-- GENDER input -->
+        <div class="inputwrap">
+            <label class="labeltext" for="gender">Gender</label><br>
+            <select class="inputfeild" name="dog-names" id="dog-names" required >
+                <option value="male">Male</option>
+                <option value="femlae">Female</option>
+            </select>
+        </div>  
+        
+          <!-- ADHAR NUMBER input -->
+        <div class="inputwrap">
+            <label class="labeltext" for="adharno">Adhaar no.</label>
+            <input id="adharno" class="inputfeild" type="number" required placeholder="Enter Adhaar number">
+        </div>
+    </div>
+    <div class="fourthwrapper">
+        <!-- PHOTOGRAPH input -->
+        <div class=" inputer inputwrap">
+            <label class="filechooser labeltext" for="pfp">photograph</label><br>
+            <input id="pfp" class="inputfeild fileattach" type="file" required placeholder="Upload your photo" >
+        </div>
+         <!-- ADHAR CARD input -->
+         <div  class="inputer inputwrap">
+            <label class="filechooser labeltext" for="adharfile">Adhaar card</label><br>
+            <input id="adharfile" class="inputfeild  fileattach" type="file" required placeholder="Upload Adhar card" >    
+        </div>
+        <div id="previmage2" class="inputedimage"></div>
+</div>
+    <div class="fifthwrapper">
+        <h3 class="">Emergency contact<br></h3>
+        <h3 class="highlight ">fill the details for the person to contact in case of emergency</h3>
+
+    </div>
+    <div class="sixthwrapper">
+        <!-- emergency name input -->
+        <div class="inputwrap">
+            <label class="labeltext" for="emergencyname">Name</label><br>
+            <input id="emergencyname" class="inputfeild" type="text" required placeholder="Enter name">
+        </div>
+        <!-- emergency contact input -->
+        <div class="inputwrap">
+            <label class="labeltext" for="emergencyphone">Contact.</label><br>
+            <input class="inputfeild" type="tel" id="emergencyphone" name="phone" placeholder="Enter phone number" minlength="10" required>
+        </div>
+    </div>
+    <div class="sevenwrapper">
+        <div class="inputwrap">
+            <label class="labeltext" for="phone">Relation.</label><br>
+            <input class="inputfeild" type="text" id="relation" name="phone" placeholder="Enter relation"  required>
+        </div>
+    </div>
+    <div class="lastwrapper">
+        <div class="lastleftwrapper">
+            <div class="lastleftupper">
+                <h3 id="termheading">T&C<br></h3>
+                <ol class="termlist">
+                    <li class="term">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quaerat?</li>
+                    <li class="term">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quaerat?</li>
+                    <li class="term">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, quaerat?</li>
+                </ol>
+            </div>
+            <div class="lastleftlower">
+               
+            </div>
+        </div>
+        <div class="lastrightwrapper">
+            <div class="lastwrap">
+            <label class="labeltext" for="signbox">Signature</label><br>
+            <span  id="signbox" class="inputfeild"></span>
+            </div>
+        </div>
+    </div>
+   </div>
+   <button type="submit" onsubmit="genpdf()" id="button">Save</button>
+   </div>
+   </form>
+
+
+</body>
+<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+<script src="script.js"></script>
+</html>
