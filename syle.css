@@ -26,7 +26,7 @@ form{
     padding:50px;
     padding-top:0;
     scale:1;
-    margin-top:2%;
+    /* margin-top:2%; */
     /* background-color: yellow; */
 /* position: absolute;
     top:0; */
@@ -44,9 +44,9 @@ form{
     right:0;
     top:0;
 }
-#invoice h3{
+/* #invoice h3{
     font-size: small;
-}
+} */
 
 #body{
     /* display:flex;
@@ -140,7 +140,7 @@ form h3{
     width:100%;
 }
 
-.highlight{
+#highlight{
     color:blue;
     font-style: italic;
     /* margin-top:1vh; */
@@ -369,7 +369,7 @@ width:60%;
     width:100%;
     justify-content: space-between;
     margin-top:10px;
-    height:8%;
+    height:fit-content;
 }
 .fourthwrapper .inputwrap{
     width:35%;
@@ -382,14 +382,15 @@ nav{
 }
 #previmage2{
     width:25%;
-    height: 100px;
+    height: 15vh;
 }
 .fifthwrapper{
     /* margin-top:10px; */
 
     width: 100%;
-
+    /* background-color: red; */
     height: 6%;
+    padding:10px;
 
 }
 .sixthwrapper{
@@ -414,20 +415,21 @@ nav{
 .lastwrapper{
     margin-top:10px;
     /* background-color: red; */
-    height:18%;
+    height:25%;
     display: flex;
     align-items: start;
+    justify-content: space-between;
     /* justify-content: space-between; */
 }
 .lastleftwrapper{
     /* background-color: green; */
-    width:54%;
+    width:70%;
     height: 100%;
 
 }
 .lastrightwrapper{
     /* background-color: blue; */
-    width: 36%;
+    width: 30%;
     height: 100%;
     margin-left:4%;
     display: flex;
@@ -447,13 +449,14 @@ nav{
 .labeltext{
     font-size: small;
 }
-
+#highlight{
+color:blue;
+font-size: 0.7vw;    
+}
 
 @media only screen and (max-width:600px) {
-body{
-    /* background-color: blue; */
 
-}
+
 
 #invoice{
     /* background-color: red; */
@@ -468,45 +471,93 @@ body{
 }
 .thirdwrapper .inputwrap:nth-child(1){
     display: block;
-    width:45%;
+    width:40%;
 }
 .thirdwrapper .inputwrap:nth-child(2){
-    width:45%;
+    width:40%;
     display:block;
 }
 .fourthwrapper{
     align-items: start;
 }
 .fourthwrapper .inputwrap{
-    width:25%;
+    width:30%;
     /* height:2vh; */
 }
 .fourthwrapper #previmage2{
-    width:40%;
+    width:35vw;
 }
 #nav{
     position:relative;
     margin:auto;
     left:0;
     }
+    .lastwrap{height: 100%;}
 #signbox{
-        width:90%;
+        width:100%;
+    background-color: blue;
+    height: 50%;
     }
-    .lastwrap{width: 100%;}
+.lastwrap{width: 100%;
+/* background-color: yellow; */
+padding:10px;}
 
 .lastrightwrapper{
-    width: 100%;
-    /* background-color: red; */
+    width: 30%;
+    /* background-color: green; */
+    display:flex;
+    align-items: start;
 }
 .lastleftwrapper .lastleftupper .term{
     font-size: xx-small;
 }
 #button{
-    width:60%;
+    width:60vw;
     margin-left: 20%;
+}
+.thirdwrapper{
+    justify-content: space-between;
 }
 #invoice{
     padding:20px;
+    height:100vh;
 }
 
+.fifthwrapper h3:nth-child(2){
+    /* color:blue; */
+    font-style: italic;
+    /* margin-top:1vh; */
+    height: fit-content;
+    /* background-color: red; */
+    font-size: x-small;
+    width: 50vw;
+}
+.heading{
+    font-size: 5vw;
+}
+
+#highlight{
+    font-size:2vw;
+}
+.lastwrap .labeltext{
+    /* background-color: brown; */
+    margin-bottom: 0;
+}
+.lastwrap {
+padding:0;
+height: 35%;
+/* background-color: green; */
+border-bottom: 2px solid rgb(136, 136, 53);
+}
+.lastwrap .labeltext{
+    height:50%;
+    /* background-color: red; */
+}
+.lastwrap #signbox{
+    display: none;
+}
+.lastwrapper{
+    /* background-color: green; */
+    height: 25%;
+}
 }
